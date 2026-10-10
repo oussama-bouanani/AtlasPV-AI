@@ -36,7 +36,7 @@ with st.sidebar:
         uploaded = st.file_uploader("Fichier de mesures", type=["csv"])
         st.caption("Colonnes : timestamp, irradiance_wm2, module_temp_c, power_kw")
     st.divider()
-    st.caption("Ce prototype n'envoie pas de données à un service externe, sauf si vous demandez explicitement une synthèse Claude API.")
+    st.caption("Les CSV sont traités sur le serveur hébergeant Streamlit. Seul un résumé est envoyé à Claude si vous demandez explicitement cette option.")
 
 config = PVConfig(capacity_kwp=capacity, performance_factor=factor,
                   min_irradiance_wm2=irradiation, deficit_threshold=threshold / 100)

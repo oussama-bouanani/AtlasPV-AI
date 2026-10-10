@@ -7,11 +7,11 @@
 - Added GitHub Actions unit-test workflow and additional validation tests.
 - Reject non-finite numeric CSV measurements.
 - Clarified optional remote data handling in the UI text.
-- Added a **draft** MIT license for review; not yet an effective license grant.
+- Adopted the MIT open-source license after maintainer approval.
 
 ## Baseline — supplied prototype
 
 - Streamlit dashboard, rule-based PV deficit alerts and optional Claude report.
 - Reproducible synthetic data and original unit-test suite.
 
-Entries describe a proposed PR, not a production release.
+Entries describe the proposed pull request, not a deployed production release.

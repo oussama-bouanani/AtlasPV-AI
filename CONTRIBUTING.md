@@ -32,4 +32,4 @@ streamlit run app.py
 - [ ] Updated documentation for changed settings, data fields, or formulas
 - [ ] No secrets, personal information or confidential field data
 
-The maintainer may need time to review contributions; no response-time guarantee is offered. A license decision is pending, so check the repository licensing status before contributing code.
+The maintainer may need time to review contributions; no response-time guarantee is offered. Contributions are accepted under the project's [MIT License](LICENSE). By submitting a contribution, you confirm that you have the right to share it under these terms.

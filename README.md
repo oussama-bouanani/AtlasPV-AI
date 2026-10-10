@@ -34,8 +34,6 @@ python -m pip install -r requirements.txt
 streamlit run app.py
 ```
 
-Alternatively, on Windows, inspect and run `LANCER_WINDOWS.bat`.
-
 ### Run tests
 
 ```bash
@@ -93,7 +91,7 @@ AtlasPV_AI/
 ├── CONTRIBUTING.md
 ├── SECURITY.md
 ├── CHANGELOG.md
-├── LICENSE_MIT_DRAFT.txt          # Review before adopting a license
+├── LICENSE                       # MIT open-source license
 └── .env.example
 ```
 
@@ -101,9 +99,9 @@ AtlasPV_AI/
 
 Contributions are welcome; start with [CONTRIBUTING.md](CONTRIBUTING.md) and the [roadmap](docs/ROADMAP.md). For sensitive vulnerabilities, see [SECURITY.md](SECURITY.md). The project is maintained as an early-stage prototype; response-time and support guarantees are not offered.
 
-## Licensing — pending maintainer confirmation
+## License
 
-**Public GitHub visibility is not equivalent to an open-source license.** A proposed MIT license is included as `LICENSE_MIT_DRAFT.txt`, but it is **not yet adopted**. The repository owner must confirm that they own the relevant rights and approve the terms. If MIT is approved, rename the draft to `LICENSE` and replace/verify copyright details. Until a license is explicitly granted, all rights remain reserved by their holders. Do not claim the repository is formally open source before adoption.
+AtlasPV AI is released under the [MIT License](LICENSE). Copyright (c) 2026 Oussama Bouanani. You may use, modify, redistribute, or include the code in commercial projects provided you preserve the license and copyright notice. This is an early-stage prototype, offered without warranty.
 
 ## Project maintainer
 
