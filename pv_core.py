@@ -52,6 +52,9 @@ def prepare_data(raw: pd.DataFrame, config: Optional[PVConfig] = None) -> pd.Dat
         df[column] = pd.to_numeric(df[column], errors="coerce")
     if df[[*REQUIRED_COLUMNS]].isna().any().any():
         raise ValueError("Valeurs manquantes ou non valides dans les colonnes obligatoires.")
+    numeric_values = df[["irradiance_wm2", "module_temp_c", "power_kw"]].to_numpy(dtype=float)
+    if not np.isfinite(numeric_values).all():
+        raise ValueError("Valeurs numériques infinies ou non valides dans le fichier CSV.")
     if df.empty or len(df) < 3:
         raise ValueError("Il faut au moins 3 mesures valides.")
     if (df["irradiance_wm2"] < 0).any() or (df["irradiance_wm2"] > 1400).any():
